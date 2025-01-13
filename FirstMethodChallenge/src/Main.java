@@ -20,15 +20,13 @@ public class Main {
 
     public static int calculateHighScorePosition (int score) {
 
-        int scoreRank;
+        int scoreRank = 4;
         if (score >= 1000) {
             scoreRank = 1;
         } else if (score >= 500) {
             scoreRank = 2;
         } else if (score >= 100) {
             scoreRank = 3;
-        } else {
-            scoreRank = 4;
         }
         return scoreRank;
     }
